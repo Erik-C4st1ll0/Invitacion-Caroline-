@@ -6,27 +6,27 @@ html,body {
 
 @font-face {
     font-family: 'FuenteMontserrat';
-    src: url('/static/fonts/Montserrat-ThinItalic.ttf')  format('truetype');
+    src: url('static/fonts/Montserrat-ThinItalic.ttf')  format('truetype');
   }
 
   @font-face {
     font-family: 'FuenteFina';
-    src: url('/static/fonts/fina2.ttf')  format('truetype');
+    src: url('static/fonts/fina2.ttf')  format('truetype');
   }
 
   @font-face {
     font-family: 'FuenteBiza';
-    src: url('/static/fonts/Bizantheum.otf')  format('truetype');
+    src: url('static/fonts/Bizantheum.otf')  format('truetype');
   }
 
   @font-face {
     font-family: 'FuenteBonita3';
-    src: url('/static/fonts/letra-bonita3.ttf')  format('truetype');
+    src: url('static/fonts/letra-bonita3.ttf')  format('truetype');
   }
 
   @font-face {
     font-family: 'FuenteBonita4';
-    src: url('/static/fonts/letrabonita4.ttf')  format('truetype');
+    src: url('static/fonts/letrabonita4.ttf')  format('truetype');
   }
 :root {
     --animate-duration: 1s;
@@ -35,7 +35,7 @@ html,body {
 }
 body {
     color: black;
-    background-image: url('/static/images/Background-verde-2.webp');
+    background-image: url('static/images/Background-verde-2.webp');
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;    
@@ -44,7 +44,7 @@ body {
 }
   
 .image-container {
-    background-image: url('/static/images/caro.jpg');
+    background-image: url('static/images/caro.jpg');
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
