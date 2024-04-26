@@ -1,0 +1,185 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: 'FuenteMontserrat';
+    src: url('/static/fonts/Montserrat-ThinItalic.ttf')  format('truetype');
+  }
+
+  @font-face {
+    font-family: 'FuenteFina';
+    src: url('/static/fonts/fina2.ttf')  format('truetype');
+  }
+
+  @font-face {
+    font-family: 'FuenteBiza';
+    src: url('/static/fonts/Bizantheum.otf')  format('truetype');
+  }
+
+  @font-face {
+    font-family: 'FuenteBonita3';
+    src: url('/static/fonts/letra-bonita3.ttf')  format('truetype');
+  }
+
+  @font-face {
+    font-family: 'FuenteBonita4';
+    src: url('/static/fonts/letrabonita4.ttf')  format('truetype');
+  }
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1
+}
+body {
+    color: black;
+    background-image: url('/static/images/Background-verde-2.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;    
+    justify-content: center;
+    font-family:  'FuenteBonita3',sans-serif;
+}
+  
+.image-container {
+    background-image: url('/static/images/caro.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;
+    height: 500px;
+    border: 1px;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    box-sizing: border-box;
+    filter:opacity(70%)
+}
+
+.title_caro{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'FuenteBonita4';
+    color: #557e40;
+}
+
+.mis_xv{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'FuenteBonita4';
+    color: #557e40;
+}
+
+.seccion_faltan{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'FuenteBonita4';
+    color: #557e40;
+    margin-top: 150px;
+}
+
+.section {
+    width: 100%; 
+    padding: 70px; 
+    margin-top: 200px;
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    text-align: center; 
+}
+.section_transparente{
+    width: 100%; 
+    padding: 70px; 
+    margin-top: 200px;
+    background-color: #ffffff00; 
+    border-radius: 10px; 
+    text-align: center; 
+}
+
+.section h2{
+    font-family: 'FuenteBonita4';
+    font-size: 40px;
+    color: #557e40;
+}
+
+.section_transparente h2{
+    font-family: 'FuenteBonita4';
+    font-size: 40px;
+    color: #557e40;;
+}
+
+.section p{
+    font-size: 20px;
+    color: rgb(114, 114, 114);
+}
+
+.contador {
+    display: flex;
+    color: #557e40;
+    justify-content: center; 
+    align-items: center;
+
+    font-family: 'FuenteBonita3';
+    width: 100%; 
+    max-width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.contador h1,
+.contador h2 {
+    margin: 0 5px;
+    font-size: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .contador h1,
+    .contador h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contador h1,
+    .contador h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .contador h1,
+    .contador h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+.hacienda-container{
+    max-width: 100%;
+    height: auto;
+}
+
+.hacienda-container img{
+    width: 70%;
+    height: auto;
+}
+
+p{
+    color: rgb(114, 114, 114);
+}
+
+#toggleAudio {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde abajo */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
+
+#btn-play{
+    display: none;
+}
