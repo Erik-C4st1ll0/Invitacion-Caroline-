@@ -35,7 +35,7 @@ html,body {
 }
 body {
     color: black;
-    background-image: url('static/images/Background-verde-2.webp');
+    background-image: url('static/images/Background-verde-2.png');
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;    
