@@ -6,27 +6,27 @@ html,body {
 
 @font-face {
     font-family: 'FuenteMontserrat';
-    src: url('../fonts/Montserrat-ThinItalic.ttf')  format('truetype');
+    src: url('../../fonts/Montserrat-ThinItalic.ttf')  format('truetype');
   }
 
   @font-face {
     font-family: 'FuenteFina';
-    src: url('../fonts/fina2.ttf')  format('truetype');
+    src: url('../../fonts/fina2.ttf')  format('truetype');
   }
 
   @font-face {
     font-family: 'FuenteBiza';
-    src: url('../fonts/Bizantheum.otf')  format('truetype');
+    src: url('../../fonts/Bizantheum.otf')  format('truetype');
   }
 
   @font-face {
     font-family: 'FuenteBonita3';
-    src: url('../fonts/letra-bonita3.ttf')  format('truetype');
+    src: url('../../fonts/letra-bonita3.ttf')  format('truetype');
   }
 
   @font-face {
     font-family: 'FuenteBonita4';
-    src: url('../fonts/letrabonita4.ttf')  format('truetype');
+    src: url('../../fonts/letrabonita4.ttf')  format('truetype');
   }
 :root {
     --animate-duration: 1s;
@@ -35,7 +35,7 @@ html,body {
 }
 body {
     color: black;
-    background-image: url('../images/Background-verde-2.png');
+    background-image: url('../../images/Background-verde-2.png');
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;    
@@ -44,7 +44,7 @@ body {
 }
   
 .image-container {
-    background-image: url('../images/caro.jpg');
+    background-image: url('../../images/caro.jpg');
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
