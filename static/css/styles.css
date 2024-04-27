@@ -39,7 +39,7 @@ body {
     background-image: url('../images/Background-verde-2.webp');
     background-size: 100% auto; /* Ancho 100%, altura automática */
     background-attachment: fixed;
-    min-height: 100vh;    
+       
     justify-content: center;
     font-family:  'FuenteBonita3',sans-serif;
 }
