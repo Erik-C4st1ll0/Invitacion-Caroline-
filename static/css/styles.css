@@ -37,11 +37,11 @@ html,body {
 body {
     color: black;
     background-image: url('../images/Background-verde-2.webp');
-    background-size: 100% auto; /* Ancho 100%, altura automática */
+    background-size: cover;
     background-attachment: fixed;
-       
+    background-repeat: no-repeat;
     justify-content: center;
-    font-family:  'FuenteBonita3',sans-serif;
+    font-family: 'FuenteBonita3', sans-serif;
 }
   
 .image-container {
@@ -269,8 +269,8 @@ p{
     overflow: hidden;
     display: block;
     padding: 1vh ;
-    background: #efecdb;
-    box-shadow: 0 10px 50px #5f2f1182;
+    background: #bceea379;
+    box-shadow: 0 10px 50px #00000082;
   }
 
 
