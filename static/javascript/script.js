@@ -23,6 +23,8 @@ setInterval(actualizarContador, 1000);
 // Boton de Reproducir y Pausar Audio
 
 document.addEventListener('DOMContentLoaded', function() {
+        // Abre el modal automáticamente al cargar la página
+        $('#BienvenidaModal').modal('show');
     const audio = document.getElementById('audio');
     const toggleButton = document.getElementById('toggleAudio');
     const playIcon = document.getElementById('btn-play');
