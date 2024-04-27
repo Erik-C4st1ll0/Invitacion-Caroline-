@@ -4,6 +4,20 @@ html,body {
     padding: 0
 }
 
+/* Para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+}
+
+/* Para dispositivos de escritorio */
+@media only screen and (min-width: 769px) {
+    body {
+        background-size: contain;
+    }
+}
+
 @font-face {
     font-family: 'FuenteMontserrat';
     src: url('../fonts/Montserrat-ThinItalic.ttf')  format('truetype');
