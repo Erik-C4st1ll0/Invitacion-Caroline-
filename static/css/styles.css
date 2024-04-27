@@ -4,13 +4,6 @@ html,body {
     padding: 0
 }
 
-/* Para dispositivos móviles */
-@media only screen and (max-width: 768px) {
-    body {
-        background-size: cover;
-    }
-}
-
 
 @font-face {
     font-family: 'FuenteMontserrat';
@@ -292,3 +285,6 @@ p{
   .img-scroll-horizontal:hover {
     filter: none;
   }
+
+
+/* Fin de Estilos para el efecto de las imagenes horizontalmente */
