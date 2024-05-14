@@ -40,7 +40,7 @@ html,body {
 }
 body {
     color: black;
-    background-image: url('../images/Background-verde-2.webp');
+    background-image: url('../images/background-marmol-blanco-vertical-1-scaled.webp');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -521,17 +521,17 @@ p{
 .gift-section {
   text-align: center;
   padding: 50px 20px;
-  background-image: url('background-flowers.jpg'); /* Ruta a la imagen de fondo */
+  background-color: #fff;
   background-size: cover;
   background-position: center;
   color: #333;
 }
 
 .gift-section h2 {
-  font-size: 36px;
+  font-size: 60px;
   color: #557e40;
   margin-bottom: 20px;
-  font-family: 'Cursive', sans-serif;
+  font-family:'FuenteBonita4'
 }
 
 .gift-section .intro {
@@ -576,4 +576,34 @@ p{
 
 .gift-option button:hover {
   background-color: #446732;
+}
+
+
+
+@media (max-width: 768px) {
+  .content h1 {
+      font-size: 8vw; /* Ajustes específicos para pantallas más pequeñas */
+  }
+
+  .content p {
+      font-size: 5vw;
+  }
+
+  .content {
+      margin-bottom: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+      font-size: 10vw; /* Ajustes específicos para pantallas aún más pequeñas */
+  }
+
+  .content p {
+      font-size: 6vw;
+  }
+
+  .content {
+      margin-bottom: 30%;
+  }
 }
