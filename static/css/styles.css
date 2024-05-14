@@ -4,7 +4,11 @@ html,body {
     padding: 0
 }
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @font-face {
     font-family: 'FuenteMontserrat';
     src: url('../fonts/Montserrat-ThinItalic.ttf')  format('truetype');
@@ -401,3 +405,175 @@ p{
     z-index: 1;
     transition: transform 0.3s ease-out;
   }
+
+
+  
+.timeline {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+.event::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #d3d3d3;
+  z-index: -1;
+}
+
+.time {
+  background: #557e40;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.details {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.details h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.details img {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.contenedor-timeline {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+
+.hero {
+  background-image: url('../images/caro-grande.jpg'); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: flex-end; /* Alinea el contenido al final del contenedor */
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
+  z-index: 1;
+}
+
+.content {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 100px;
+}
+
+.content h1 {
+  font-size: 108px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: 'FuenteBonita4';
+}
+
+.content p {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: 'FuenteBonita3';
+}
+
+.gift-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url('background-flowers.jpg'); /* Ruta a la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  color: #333;
+}
+
+.gift-section h2 {
+  font-size: 36px;
+  color: #557e40;
+  margin-bottom: 20px;
+  font-family: 'Cursive', sans-serif;
+}
+
+.gift-section .intro {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.gift-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gift-option {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gift-option img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.gift-option p {
+  margin: 10px 0;
+}
+
+.gift-option button {
+  background-color: #557e40;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gift-option button:hover {
+  background-color: #446732;
+}

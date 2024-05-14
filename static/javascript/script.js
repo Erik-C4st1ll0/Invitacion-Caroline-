@@ -1,3 +1,6 @@
+
+
+
 // Función para actualizar el contador
 function actualizarContador() {
     const fechaActual = new Date();
@@ -26,19 +29,25 @@ document.addEventListener('DOMContentLoaded', function() {
         // Abre el modal automáticamente al cargar la página
         $('#BienvenidaModal').modal('show');
     const audio = document.getElementById('audio');
+    audio.muted = false;
+    audio.play();
     const toggleButton = document.getElementById('toggleAudio');
     const playIcon = document.getElementById('btn-play');
     const pauseIcon = document.getElementById('btn-pause');
-
-    toggleButton.addEventListener('click', function() {
-        if (audio.paused) {
-            audio.play();
-            playIcon.style.display = 'none';
-            pauseIcon.style.display = 'block';
-        } else {
-            audio.pause();
-            playIcon.style.display = 'block';
-            pauseIcon.style.display = 'none';
-        }
-    });
 });
+
+function play_music() {
+    var audio = document.getElementById('audio');
+    var toggleButton = document.getElementById('toggleAudio');
+    var playIcon = document.getElementById('btn-play');
+    var pauseIcon = document.getElementById('btn-pause');
+    if (audio.paused) {
+        audio.play();
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'block';
+    } else {
+        audio.pause();
+        playIcon.style.display = 'block';
+        pauseIcon.style.display = 'none';
+    }
+}
