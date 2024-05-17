@@ -40,10 +40,7 @@ html,body {
 }
 body {
     color: black;
-    background-image: url('../images/background-marmol-blanco-vertical-1-scaled.webp');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+background-color: #fff;
     justify-content: center;
     font-family: 'FuenteBonita3', sans-serif;
 }
@@ -78,20 +75,81 @@ body {
     font-size: 50px;
     font-family: 'FuenteBonita4';
     color: #557e40;
+    margin: 0;
 }
 
-.seccion_faltan{
-    text-align: center;
-    font-size: 60px;
-    font-family: 'FuenteBonita4';
-    color: #557e40;
-    margin-top: 150px;
+.mi_galeria{
+  text-align: center;
+  font-size: 70px;
+  font-family: 'FuenteBonita4';
+  color: #557e40;
+  background-color: rgb(242, 242, 242);
+  height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+.seccion_faltan {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'FuenteBonita4';
+  color: #557e40;
+  background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+  background-size: 50% 100%, 50% 100%;
+  height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Media queries para ajustar el comportamiento en diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  .seccion_faltan {
+      background-image: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .seccion_faltan::before, .seccion_faltan::after {
+      content: "";
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 50vh; /* Cada imagen ocupa la mitad de la altura de la pantalla */
+  }
+
+  .seccion_faltan::before {
+      background-image: url('../images/Tiana 3 xl.png');
+  }
+
+  .seccion_faltan::after {
+      background-image: url('../images/Tiana 3 ch.webp');
+  }
+}
+
+.donde_cuando{
+  text-align: center;
+  font-size: 70px;
+  font-family: 'FuenteBonita4';
+  color: #557e40;
+  background-image: url('../images/Tiana 3 ch.png');
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  
+  height: 50vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section {
     width: 100%; 
     padding: 70px; 
-    margin-top: 200px;
+
     background-color: #ffffff; 
     border-radius: 10px; 
     text-align: center; 
@@ -136,6 +194,41 @@ body {
     box-sizing: border-box;
 }
 
+.contenedor-dias-numero{
+  display: flex;
+  color: #557e40;
+  justify-content: center; 
+  align-items: center;
+  font-family: 'FuenteBonita3';
+  width: 100%; 
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+
+.contenedor-dias{
+  display: flex;
+  color: #557e40;
+  justify-content: center; 
+  align-items: center;
+  font-family: 'FuenteBonita3';
+  width: 100%; 
+  max-width: 100%; 
+ 
+  box-sizing: border-box;
+}
+
+.contenedor-dias-numero h1,
+.contenedor-dias-numero h2 {
+    margin: 0 5px;
+    font-size: 12rem;
+}
+
+.contenedor-dias h1,
+.contenedor-dias h2 {
+    margin: 0 5px;
+    font-size: 3rem;
+}
+
 .contador h1,
 .contador h2 {
     margin: 0 5px;
@@ -148,6 +241,14 @@ body {
     .contador h2 {
         font-size: 2rem;
     }
+    .contenedor-dias h1,
+    .contenedor-dias h2 {
+        font-size: 2rem;
+    }
+    .contenedor-dias-numero h1,
+.contenedor-dias-numero h2 {
+    font-size: 6rem;
+}
 }
 
 @media (max-width: 576px) {
@@ -155,12 +256,20 @@ body {
     .contador h2 {
         font-size: 1.5rem;
     }
+    .contenedor-dias h1,
+    .contenedor-dias h2 {
+      font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 414px) {
     .contador h1,
     .contador h2 {
         font-size: 1.2rem;
+    }
+    .contenedor-dias h1,
+    .contenedor-dias h2 {
+      font-size: 1.2rem;
     }
 }
 
@@ -211,6 +320,8 @@ p{
   .external {
     overflow: hidden;
     height: 100vh;
+    margin-bottom: 100px;
+    
   }
   
   .horizontal-scroll-wrapper {
@@ -410,7 +521,6 @@ p{
   
 .timeline {
   border-radius: 10px;
-  padding: 20px;
   width: 250px;
   text-align: center;
 
@@ -418,6 +528,7 @@ p{
 
 .timeline h2{
   margin-bottom: 100px;
+  margin-top: 100px;
   font-size: 80px;
   font-family: 'FuenteBonita4';
   color: #557e40;
@@ -428,6 +539,7 @@ p{
   align-items: center;
   margin-bottom: 20px;
   position: relative;
+  z-index: 2; 
 }
 
 
@@ -437,9 +549,9 @@ p{
   left: 50%;
   transform: translateX(-50%);
   width: 3px;
-  height: 150px;
-  background: #d3d3d3;
-  z-index: -1;
+  height: 125px;
+  background: #557e40;
+  z-index: 3; 
 
 }
 
@@ -477,8 +589,13 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
+  background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:1000px;
+  z-index: 1;
 }
 
 
@@ -539,13 +656,20 @@ p{
 }
 
 .gift-section {
+
   text-align: center;
   padding: 50px 20px;
-  background-color: #fff;
-  background-size: cover;
-  background-position: center;
+  padding-top: 100px;
   color: #333;
+  background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
 }
+
+/* Media queries para ajustar el comportamiento en diferentes tamaños de pantalla */
+
 
 .gift-section h2 {
   font-size: 60px;

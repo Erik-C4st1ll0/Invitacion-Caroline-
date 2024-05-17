@@ -47,8 +47,6 @@
     </div>
 
     <div class="mis_xv">
-        
-        <br>
         <audio id="audio" src="static/audio/the-beat-of-nature-122841.mp3" autoplay="true" muted="muted"></audio>
         <button onclick="play_music()" class="btn btn-light" id="toggleAudio">
             <svg id="btn-play" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,10 +62,17 @@
         </button>
     </div>
 
-    <div class="seccion_faltan">Te espero en...</div>
-    <div class="contador">
+    <div class="seccion_faltan">Te espero en...
+    
+    <div class="contenedor-dias-numero">
         <h1 id="contador-dias">00</h1>
+    </div>
+
+    <div class="contenedor-dias">
         <h2>DÍAS</h2>
+    </div>
+ 
+    <div class="contador">
         <h1 id="contador-horas">00</h1>
         <h2>HRS</h2>
         <h1 id="contador-minutos">00</h1>
@@ -75,8 +80,8 @@
         <h1 id="contador-segundos">00</h1>
         <h2>SEG</h2>
     </div>
-    <br>
-    <br>
+</div>
+
 
     <div class="section" id="section1">
         <h2>Con la Bendicion de Dios y Mis Padres</h2>
@@ -92,7 +97,7 @@
         <p>Jesus Orozco</p>
     </div>
 
-    <div class="seccion_faltan">¿Donde y Cuando?</div>
+    <div class="donde_cuando">¿Donde y Cuando?</div>
 
     <div class="section" id="section1">
         <div class="row featurette">
@@ -121,10 +126,19 @@
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="section_transparente" id="section2">
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="row featurette">
+            <div class="col-md-5">
+                <div class="hacienda-container">
+                    <img style="border-radius: 5px;" src="static/images/hacienda-manantial.png" width="200px" height="200px" alt="">
+                    <br>
+                    <br>
+                    <a href="https://maps.app.goo.gl/nFcwP8r7kDjfrWHw8" target="_blank" class="btn btn-light">Abrir Mapa</a>
+                </div>
+            </div>
             <div class="col-md-7">
                 <h2 class="featurette-heading fw-normal lh-1">Salon de Fiesta<span class="text-body-secondary"></span></h2>
                 <p class="lead">Hacienda el Manantial</p>
@@ -141,16 +155,9 @@
                     </svg>
                 </p>
             </div>
-            <div class="col-md-5">
-                <div class="hacienda-container">
-                    <img style="border-radius: 5px;" src="static/images/hacienda-manantial.png" width="200px" height="200px" alt="">
-                    <br>
-                    <br>
-                    <a href="https://maps.app.goo.gl/nFcwP8r7kDjfrWHw8" target="_blank" class="btn btn-light">Abrir Mapa</a>
-                </div>
-            </div>
         </div>
     </div>
+    
     <br>
     <br>
     <div class="contenedor-timeline">
@@ -188,14 +195,12 @@
                 <div class="time">1:00 HRS</div>
                 <div class="details">
                     <h3>Fin del Evento</h3>
-                    <img src="https://img.icons8.com/ios-filled/50/000000/musical-notes.png" alt="Baile">
+                    <img src="static/images/dormir.png" alt="Baile">
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <div class="seccion_faltan">Mi Galeria</div>
+    <div class="mi_galeria">Mi Galeria
     
     <div class="external">
         <div class="horizontal-scroll-wrapper">
@@ -244,10 +249,7 @@
             </div>
         </div>
     </div>
-
-    <br>
-    <br>
-
+</div>
     <div class="gift-section">
         <h2>Regalos</h2>
         <p class="intro">Tu presencia es mi mayor regalo, pero si deseas tener un detalle conmigo, también lo puedes hacer:</p>
