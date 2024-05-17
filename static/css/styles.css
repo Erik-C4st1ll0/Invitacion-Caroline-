@@ -181,6 +181,18 @@ background-color: #fff;
     font-family: 'FuenteBonita3';
 }
 
+.section a{
+  font-size: 20px;
+  color: rgb(114, 114, 114);
+  font-family: 'FuenteBonita3';
+  text-decoration: none;
+}
+
+.section a:hover{
+  text-decoration:underline
+  
+}
+
 .contador {
     display: flex;
     color: #557e40;
@@ -320,8 +332,6 @@ p{
   .external {
     overflow: hidden;
     height: 100vh;
-    margin-bottom: 100px;
-    
   }
   
   .horizontal-scroll-wrapper {
