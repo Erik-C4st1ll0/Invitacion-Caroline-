@@ -78,17 +78,7 @@ background-color: #fff;
     margin: 0;
 }
 
-.mi_galeria{
-  text-align: center;
-  font-size: 70px;
-  font-family: 'FuenteBonita4';
-  color: #557e40;
-  background-color: rgb(242, 242, 242);
-  height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
-  padding-top: 60px;
-  padding-bottom: 60px;
-  overflow: hidden;
-}
+
 
 .seccion_faltan {
   text-align: center;
@@ -149,9 +139,9 @@ background-color: #fff;
 .section {
     width: 100%; 
     padding: 70px; 
-
+    border: #44673245 10px solid;
     background-color: #ffffff; 
-    border-radius: 10px; 
+    
     text-align: center; 
 }
 .section_transparente{
@@ -284,13 +274,16 @@ background-color: #fff;
       font-size: 1.2rem;
     }
 }
+img {
 
+  object-fit: cover;
+  transform-origin: left;
+}
 
 .hacienda-container{
     max-width: 100%;
     height: auto;
 }
-
 .hacienda-container img{
     width: 70%;
     height: auto;
@@ -332,6 +325,23 @@ p{
   .external {
     overflow: hidden;
     height: 100vh;
+    border: #44673245 10px solid;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'FuenteBonita4';
+    color: #557e40;
+    background-color: #b2de9c35;
+
+
+  }
+
+  .mi_galeria{
+    padding: 5%;
+    font-size: 60px;
+    font-family: 'FuenteBonita4';
+    color: #557e40;
+    text-align: center;
+    
   }
   
   .horizontal-scroll-wrapper {
@@ -346,8 +356,8 @@ p{
     padding: 0;
     height: 100vw;
     perspective: 1px;
-      transform-style: preserve-3d;
-    padding-bottom: 10rem;
+    transform-style: preserve-3d;
+    
   }
   .img-wrapper {
     transform: rotate(90deg);
@@ -668,7 +678,6 @@ p{
 .gift-section {
 
   text-align: center;
-  padding: 50px 20px;
   padding-top: 100px;
   color: #333;
   background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
@@ -676,20 +685,21 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+  
 }
 
 /* Media queries para ajustar el comportamiento en diferentes tamaños de pantalla */
 
 
 .gift-section h2 {
-  font-size: 60px;
+  font-size: 70px;
   color: #557e40;
   margin-bottom: 20px;
   font-family:'FuenteBonita4'
 }
 
 .gift-section .intro {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 40px;
 }
 
@@ -730,5 +740,11 @@ p{
 
 .gift-option button:hover {
   background-color: #446732;
+}
+
+.fade-in {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Slightly translate down */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 

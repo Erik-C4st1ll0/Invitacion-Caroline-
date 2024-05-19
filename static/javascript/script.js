@@ -4,7 +4,7 @@
 // Función para actualizar el contador
 function actualizarContador() {
     const fechaActual = new Date();
-    const fechaEvento = new Date('2024-07-18'); // Fecha del Evento
+    const fechaEvento = new Date('2024-07-18 00:00:00'); // Fecha del Evento
 
     const diferencia = fechaEvento - fechaActual;
 
@@ -18,7 +18,7 @@ function actualizarContador() {
     document.getElementById('contador-minutos').innerText = minutos < 10 ? '0' + minutos : minutos;
     document.getElementById('contador-segundos').innerText = segundos < 10 ? '0' + segundos : segundos;
 }
-
+console.log(Date())
 
 
 setInterval(actualizarContador, 1000);

@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -40,7 +41,7 @@
 
     <div class="hero">
         <div class="content">
-            <h1 >Caroline Ortiz</h1>
+            <h1>Caroline Ortiz</h1>
             <p>¡MIS XV AÑOS!</p>
             <p>Jueves, 18 de Julio de 2024</p>
         </div>
@@ -83,7 +84,7 @@
 </div>
 
 
-    <div class="section" id="section1">
+    <div class="section fade-in" id="section1">
         <h2>Con la Bendicion de Dios y Mis Padres</h2>
         <img src="static/images/flor.jpg" width="150px" alt="">
         <p>Veronica de La Riva</p>
@@ -97,7 +98,7 @@
         <p>Jesus Orozco</p>
     </div>
 
-    <div class="donde_cuando">¿Donde y Cuando?</div>
+    <div class="donde_cuando fade-in">¿Donde y Cuando?</div>
 
     <div class="section" id="section1">
         <div class="row featurette">
@@ -116,13 +117,15 @@
                         <path d="M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.7533 17.2467 2.5 12 2.5C6.7533 2.5 2.5 6.7533 2.5 12C2.5 17.2467 6.7533 21.5 12 21.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </p>
+                <p>
+                    <a href="https://maps.app.goo.gl/tnnA6c4GeHRNXyx49" target="_blank" class="btn btn-light">Abrir Mapa</a>
+                </p>
             </div>
             <div class="col-md-5">
                 <div class="hacienda-container">
+                    <div class="reveal">
                     <img style="border-radius: 5px;" src="static/images/parroquia-bautista.png" width="200px" height="200px" alt="">
-                    <br>
-                    <br>
-                    <a href="https://maps.app.goo.gl/tnnA6c4GeHRNXyx49" target="_blank" class="btn btn-light">Abrir Mapa</a>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -131,14 +134,6 @@
         <br>
         <br>
         <div class="row featurette">
-            <div class="col-md-5">
-                <div class="hacienda-container">
-                    <img style="border-radius: 5px;" src="static/images/hacienda-manantial.png" width="200px" height="200px" alt="">
-                    <br>
-                    <br>
-                    <a href="https://maps.app.goo.gl/nFcwP8r7kDjfrWHw8" target="_blank" class="btn btn-light">Abrir Mapa</a>
-                </div>
-            </div>
             <div class="col-md-7">
                 <h2 class="featurette-heading fw-normal lh-1">Salon de Fiesta<span class="text-body-secondary"></span></h2>
                 <p class="lead">Hacienda el Manantial</p>
@@ -154,44 +149,52 @@
                         <path d="M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.7533 17.2467 2.5 12 2.5C6.7533 2.5 2.5 6.7533 2.5 12C2.5 17.2467 6.7533 21.5 12 21.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </p>
+                <p>
+                    <a href="https://maps.app.goo.gl/nFcwP8r7kDjfrWHw8" target="_blank" class="btn btn-light">Abrir Mapa</a>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <div class="hacienda-container">
+                    <div class="reveal">
+                        <img style="border-radius: 5px;" src="static/images/hacienda-manantial.png" width="200px" height="200px" alt="">
+                    </div>                    
+                </div>
             </div>
         </div>
     </div>
-    
-    <br>
-    <br>
-    <div class="contenedor-timeline">
+
+    <div class="contenedor-timeline fade-in">
         <div class="timeline">
-            <h2>Itinerario</h2>
-            <div class="event">
+            <h2 class="row">Itinerario</h2>
+            <div class="event fade-in">
                 <div class="time">17:30 HRS</div>
                 <div class="details">
                     <h3>Ceremonia Religiosa</h3>
                     <img src="https://img.icons8.com/ios-filled/50/000000/church.png" alt="Iglesia">
                 </div>
             </div>
-            <div class="event">
+            <div class="event fade-in">
                 <div class="time">19:30 HRS</div>
                 <div class="details">
                     <h3>Presentación</h3>
                     <img src="https://img.icons8.com/ios-filled/50/000000/wedding-dress.png" alt="Presentación">
                 </div>
             </div>
-            <div class="event">
+            <div class="event fade-in">
                 <div class="time">21:00 HRS</div>
                 <div class="details">
                     <h3>Celebración</h3>
                     <img src="https://img.icons8.com/ios-filled/50/000000/restaurant.png" alt="Cena">
                 </div>
             </div>
-            <div class="event">
+            <div class="event fade-in">
                 <div class="time">22:00 HRS</div>
                 <div class="details">
                     <h3>A bailar</h3>
                     <img src="https://img.icons8.com/ios-filled/50/000000/musical-notes.png" alt="Baile">
                 </div>
             </div>
-            <div class="event">
+            <div class="event fade-in">
                 <div class="time">1:00 HRS</div>
                 <div class="details">
                     <h3>Fin del Evento</h3>
@@ -200,9 +203,11 @@
             </div>
         </div>
     </div>
-    <div class="mi_galeria">Mi Galeria
-    
-    <div class="external">
+    <div class="mi_galeria fade-in">
+        
+        Mi Galeria
+    <div class="external fade-in">
+       
         <div class="horizontal-scroll-wrapper">
             <div class="img-wrapper slower">
                 <img class="img-scroll-horizontal" src="static/images/caro.jpg" alt="">
@@ -251,30 +256,73 @@
     </div>
 </div>
     <div class="gift-section">
-        <h2>Regalos</h2>
-        <p class="intro">Tu presencia es mi mayor regalo, pero si deseas tener un detalle conmigo, también lo puedes hacer:</p>
+        <h2 class="fade-in">Regalos</h2>
+        <p class="intro fade-in">Tu presencia es mi mayor regalo, pero si deseas tener un detalle conmigo, también lo puedes hacer:</p>
         <div class="gift-options">
-            <div class="gift-option">
+            <!-- <div class="gift-option">
                 <img src="liverpool-logo.png" alt="Liverpool">
                 <p>Evento número: 51320732</p>
                 <button>VER MESA</button>
-            </div>
+            </div> -->
+            <div class="row">
             <div class="gift-option">
                 <img src="static/images/Citibanamex_logo.svg.png" alt="Citibanamex">
                 <p>Israel Ortiz</p>
                 <p>CUENTA: 6372748508362</p>
                 <p>Tarjeta: 5273968535</p>
             </div>
+        </div>
+        <div class="row">
             <div class="gift-option">
                 <img src="static/images/carta-de-amor.png" alt="Lluvia de Sobres">
                 <p>LLUVIA DE SOBRES</p>
-            </div>
+            </div> 
+        </div>           
         </div>
     </div>
 
 </body>
 
 <script>
+    gsap.registerPlugin(ScrollTrigger);
 
+let revealContainers = document.querySelectorAll(".row");
+
+revealContainers.forEach((container) => {
+  let image = container.querySelector("img");
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      toggleActions: "restart none none reset"
+    }
+  });
+
+  tl.set(container, { autoAlpha: 1 });
+  tl.from(container, 1.5, {
+    xPercent: -100,
+    ease: Power2.out
+  });
+  tl.from(image, 1.5, {
+    xPercent: 100,
+    scale: 1.3,
+    delay: -1.5,
+    ease: Power2.out
+  });
+});
+
+gsap.utils.toArray('.fade-in').forEach(element => {
+      gsap.to(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: 'top 80%', // When the top of the element is 80% from the top of the viewport
+          end: 'top 60%', // When the top of the element is 60% from the top of the viewport
+          toggleActions: 'restart none none reset', // On enter play, no actions on leave, re-enter, or re-leave
+         
+        },
+        opacity: 1,
+        y: 0,
+        duration: 1
+      });
+    });
 </script>
 </html>
