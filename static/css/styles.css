@@ -638,9 +638,7 @@ p{
     background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */
   }
 
-  .body {
-    background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */
-  }
+
 }
 
 .hero::after {
