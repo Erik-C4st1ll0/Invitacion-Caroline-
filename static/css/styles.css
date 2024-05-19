@@ -360,10 +360,6 @@ p{
     transform-style: preserve-3d;
     
   }
-
-  .left-animation{
-    overflow: hidden;
-  }
   .img-wrapper {
     transform: rotate(90deg);
     display: flex;
