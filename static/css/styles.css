@@ -324,7 +324,7 @@ p{
     height: 1px;
   }
   .external {
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 100vh;
     border: #44673245 10px solid;
     text-align: center;
