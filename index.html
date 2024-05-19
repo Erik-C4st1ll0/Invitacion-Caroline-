@@ -292,7 +292,7 @@
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: container,
-          toggleActions: "play none none none",
+          toggleActions: "restart none none reset",
           start: "top 80%", // Ajusta este valor si es necesario
           end: "bottom 20%", // Ajusta este valor si es necesario
           markers: false // Habilita esto para depuración si lo necesitas
@@ -318,7 +318,7 @@
           trigger: element,
           start: 'top 80%', // Cuando la parte superior del elemento esté al 80% desde la parte superior de la ventana
           end: 'top 60%', // Cuando la parte superior del elemento esté al 60% desde la parte superior de la ventana
-          toggleActions: "play none none none", // Al entrar reproduce, no hay acciones al salir, reentrar o volver a salir
+          toggleActions: "restart none none reset", // Al entrar reproduce, no hay acciones al salir, reentrar o volver a salir
           invalidateOnRefresh: true,
         },
         opacity: 1,
