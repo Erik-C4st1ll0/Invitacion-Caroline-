@@ -324,7 +324,7 @@ p{
     height: 1px;
   }
   .external {
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100vh;
     border: #44673245 10px solid;
     text-align: center;
@@ -352,8 +352,8 @@ p{
     width: 100vh;
     transform: rotate(-90deg) translate3d(0,-100vh,0);
     transform-origin: right top;
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-y: auto;
+    overflow-x: hidden; */
     padding: 0;
     height: 100vw;
     perspective: 1px;
@@ -404,7 +404,7 @@ p{
   }
 
   .img-wrapper .img-scroll-horizontal {
-    overflow: hidden;
+    /* overflow: hidden; */
     display: block;
     padding: 1vh ;
     background: #bceea379;
@@ -439,7 +439,7 @@ p{
   
     background: #fff !important;
     border-top-right-radius: 10px !important;
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
