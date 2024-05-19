@@ -293,7 +293,7 @@ revealContainers.forEach((container) => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: container,
-      toggleActions: "restart none none reset"
+      toggleActions: "play none none none",
     }
   });
 
@@ -316,8 +316,7 @@ gsap.utils.toArray('.fade-in').forEach(element => {
           trigger: element,
           start: 'top 80%', // When the top of the element is 80% from the top of the viewport
           end: 'top 60%', // When the top of the element is 60% from the top of the viewport
-          toggleActions: 'restart none none reset', // On enter play, no actions on leave, re-enter, or re-leave
-         
+          toggleActions: "play none none none", // On enter play, no actions on leave, re-enter, or re-leave
         },
         opacity: 1,
         y: 0,
