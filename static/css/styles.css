@@ -360,6 +360,15 @@ p{
     transform-style: preserve-3d;
     
   }
+
+  .left-animation {
+    opacity: 0;
+    overflow: hidden;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+}
   .img-wrapper {
     transform: rotate(90deg);
     display: flex;
@@ -544,13 +553,13 @@ p{
   border-radius: 10px;
   width: 250px;
   text-align: center;
-
+  
 }
 
 .timeline h2{
   margin-bottom: 100px;
   margin-top: 100px;
-  font-size: 80px;
+  font-size: 74px;
   font-family: 'FuenteBonita4';
   color: #557e40;
 }
