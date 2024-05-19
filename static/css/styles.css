@@ -439,7 +439,7 @@ p{
   
     background: #fff !important;
     border-top-right-radius: 10px !important;
-    /* overflow: hidden !important; */
+    overflow: hidden !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
