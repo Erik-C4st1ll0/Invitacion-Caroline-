@@ -404,7 +404,7 @@ p{
   }
 
   .img-wrapper .img-scroll-horizontal {
-    /* overflow: hidden; */
+     overflow: hidden;
     display: block;
     padding: 1vh ;
     background: #bceea379;
@@ -637,7 +637,6 @@ p{
   .hero {
     background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */
   }
-
 
 }
 
