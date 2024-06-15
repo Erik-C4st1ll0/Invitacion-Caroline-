@@ -19,7 +19,7 @@
 
 <div class="modal fade" id="BienvenidaModal" tabindex="-1" aria-labelledby="exampleModalCenterTitle" data-bs-backdrop="static" data-bs-keyboard="false"  aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content card wallet">
+      <div class="modal-content card-card wallet">
             
                 <div class="overlay"></div>
                 <div class="circle" data-bs-dismiss="modal" onclick="play_music()">
@@ -64,44 +64,46 @@
         </button>
     </div>
 
-    <div class="seccion_faltan"> <span class="fade-in">Te espero en...</span>
-    
-    <div class="contenedor-dias-numero fade-in">
-        <h1 id="contador-dias">00</h1>
-    </div>
+<div class="seccion_faltan"> 
+    <div class="contenedor-faltan">
+        Te espero en...
+        <div class="contenedor-dias-numero fade-in">
+            <h1 id="contador-dias">00</h1>
+        </div>
 
-    <div class="contenedor-dias fade-in">
-        <h2>DÍAS</h2>
-    </div>
- 
-    <div class="contador fade-in">
-        <h1 id="contador-horas">00</h1>
-        <h2>HRS</h2>
-        <h1 id="contador-minutos">00</h1>
-        <h2>MIN</h2>
-        <h1 id="contador-segundos">00</h1>
-        <h2>SEG</h2>
+        <div class="contenedor-dias fade-in">
+            <h2>DÍAS</h2>
+        </div>
+    
+        <div class="contador fade-in">
+            <h1 id="contador-horas">00</h1>
+            <h2>HRS</h2>
+            <h1 id="contador-minutos">00</h1>
+            <h2>MIN</h2>
+            <h1 id="contador-segundos">00</h1>
+            <h2>SEG</h2>
+        </div>
     </div>
 </div>
 
 
-    <div class="section fade-in" id="section1">
+    <div class="section fade-in" >
         <h2 class="fade-in">Con la Bendicion de Dios y Mis Padres</h2>
-        <img src="static/images/flor.jpg" width="150px" alt="">
+        <img class="flores-pie fade-in" src="static/images/flores-pie.png" width="200px" alt="">
         <p class="fade-in">Veronica de La Riva</p>
         <p class="fade-in">Israel Ortiz</p>
         <br>
         <hr class="featurette-divider">
         <br>
         <h2 class="fade-in">Y en Compañia de Mis Padrinos</h2>
-        <img src="static/images/flor.jpg" width="150px" alt="">
+        <img class="flores-pie fade-in" src="static/images/flores-pie.png" width="200px" alt="">
         <p class="fade-in">Blanca Garcia</p>
         <p class="fade-in">Jesus Orozco</p>
     </div>
 
     <div class="donde_cuando fade-in">¿Donde y Cuando?</div>
 
-    <div class="section" id="section1">
+    <div class="section">
         <div class="left-animation row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading fw-normal lh-1">Iglesia<span class="text-body-secondary"></span></h2>
@@ -119,7 +121,7 @@
                     </svg>
                 </p>
                 <p>
-                    <a href="https://maps.app.goo.gl/tnnA6c4GeHRNXyx49" target="_blank" class="btn btn-light">Abrir Mapa</a>
+                    <a href="https://maps.app.goo.gl/tnnA6c4GeHRNXyx49" style="text-decoration: none;" target="_blank" class="btn btn-light">Abrir Mapa</a>
                 </p>
             </div>
             <div class="col-md-5">
@@ -151,7 +153,7 @@
                     </svg>
                 </p>
                 <p>
-                    <a href="https://maps.app.goo.gl/nFcwP8r7kDjfrWHw8" target="_blank" class="btn btn-light">Abrir Mapa</a>
+                    <a href="https://maps.app.goo.gl/nFcwP8r7kDjfrWHw8" style="text-decoration: none;" target="_blank" class="btn btn-light">Abrir Mapa</a>
                 </p>
             </div>
             <div class="col-md-5">
@@ -256,32 +258,51 @@
         </div>
     </div>
 </div>
-    <div class="gift-section">
-        <h2 class="fade-in">Regalos</h2>
-        <p class="intro fade-in">Tu presencia es mi mayor regalo, pero si deseas tener un detalle conmigo, también lo puedes hacer:</p>
-        <div class="gift-options">
-            <!-- <div class="gift-option">
-                <img src="liverpool-logo.png" alt="Liverpool">
-                <p>Evento número: 51320732</p>
-                <button>VER MESA</button>
-            </div> -->
-            <div class="left-animation">
-            <div class="gift-option">
-                <img src="static/images/Citibanamex_logo.svg.png" alt="Citibanamex">
-                <p>Israel Ortiz</p>
-                <p>CUENTA: 6372748508362</p>
-                <p>Tarjeta: 5273968535</p>
-            </div>
-        </div>
+
+<div class="gift-section">
+    <h2 class="fade-in">Regalos</h2>
+    <p class="intro fade-in">Tu presencia es mi mayor regalo, pero si deseas tener un detalle conmigo, también lo puedes hacer:</p>
+    <div class="gift-options">
+        <!-- <div class="gift-option">
+            <img src="liverpool-logo.png" alt="Liverpool">
+            <p>Evento número: 51320732</p>
+            <button>VER MESA</button>
+        </div> -->
         <div class="left-animation">
-            <div class="gift-option">
-                <img src="static/images/carta-de-amor.png" alt="Lluvia de Sobres">
-                <p>LLUVIA DE SOBRES</p>
-            </div> 
-        </div>           
+        <div class="gift-option">
+            <img src="static/images/Citibanamex_logo.svg.png" alt="Citibanamex">
+            <p>Israel Ortiz</p>
+            <p>CUENTA: 6372748508362</p>
+            <p>Tarjeta: 5273968535</p>
         </div>
     </div>
+    <div class="left-animation">
+        <div class="gift-option">
+            <img src="static/images/gift.png" alt="Lluvia de Sobres">
+            <p>Lluvia de Sobres</p>
+        </div> 
+    </div>           
+    </div>
+</div>
 
+<div class="asistencia row">
+    <div class="col-sm-6 fade-in img-confirmar">
+        <!-- <div class="img-confirmar fade-in">
+            
+        </div> -->
+    </div>
+    <div class="col-sm-6 fade-in card text-center text-confirm">
+        <!-- <div class="card text-center fade-in text-confirm"> -->
+                <h1 class="display-4">¡Confirma tu Asistencia!</h1>
+                
+                <hr class="my-4">
+                <p class="lead">Contesta el formulario de asistencia escaneando el codigo QR o en el boton "Confirmar Asistencia"</p>
+                <img src="static/images/qr_form.png" width="300px" height="300px" alt="">
+                <p class="lead">
+                  <a id="btn-confirm-asistencia" class="btn btn-light btn-lg" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScLLyaK9LGChkGF1-Ni2-t_Zw97e3Rf42XYTRjv_uibbdA9_g/viewform" role="button">Confirmar Asistencia</a>
+        <!-- </div> -->
+    </div>
+</div>
 
 
 </body>

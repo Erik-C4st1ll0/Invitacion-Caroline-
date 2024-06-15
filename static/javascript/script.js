@@ -18,7 +18,6 @@ function actualizarContador() {
     document.getElementById('contador-minutos').innerText = minutos < 10 ? '0' + minutos : minutos;
     document.getElementById('contador-segundos').innerText = segundos < 10 ? '0' + segundos : segundos;
 }
-console.log(Date())
 
 
 setInterval(actualizarContador, 1000);
